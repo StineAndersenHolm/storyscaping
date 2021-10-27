@@ -1,0 +1,181 @@
+/*
+ Theme Name:   Astra Child Theme
+ Theme URI:    http://localhost
+ Description:  Astra Child Theme
+ Author:       Stine
+ Author URI:   http://localhost
+ Template:     astra
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentyfifteenchild
+*/
+
+/* Diven for hele quizen */
+.qsm-quiz-container{
+    text-align: center;
+    margin-top:100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: rgb(138, 125, 108);
+    padding: 80px 50px 80px 50px;
+}
+
+.qsm-quiz-form{
+ text-align: center;
+}
+
+.mlw_qmn_quiz{
+ text-align: center;
+}
+
+.mlw_qmn_quiz_link{
+padding: 50px;
+}
+
+.mlw_qmn_question {
+text-align: center;
+}
+
+.mlw_qmn_timer {
+    background-color: blueviolet;
+    display: none;
+}
+
+a.qsm-btn.qsm-previous.qmn_btn.mlw_qmn_quiz_link.mlw_previous {
+    display: none !important;
+}
+
+/*Tekst på resultat af quizzen*/
+.tekst_resultat{
+text-align: center;
+font-size: 15px;
+}
+
+/*Tekst - oplevelser der passer til dig*/
+.tekst_resultat2{
+    text-align: center;
+    font-weight: 700px;
+    font-size: 15px;
+    color: black;
+    }
+
+/*Billederne på resultat af quizzen*/
+.billede_resultat{
+    width: 50%;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+/*Grid af quizzen*/
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px 1px;
+    font-family: 'Rajdhani', sans-serif;
+    grid-template-areas:
+        "celle1 celle2 celle3"
+        ". . ."
+        ". . .";
+}
+
+/*Billede 1 på resultat af quizzen*/
+.celle1 {
+    grid-area: celle1;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*Billede 2 på resultat af quizzen*/
+.celle2 {
+    grid-area: celle2;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/*Billede 3 på resultat af quizzen*/
+.celle3 {
+    margin-top: 20px;
+    text-align: center;
+    grid-area: celle3;
+    font-size: 20px;
+}
+
+
+/*----- Ipad version ----*/
+@media only screen and (min-width:700px) {
+
+    /*Næste Knap*/
+    a.qsm-btn.qsm-next.qmn_btn.mlw_qmn_quiz_link.mlw_next {
+        margin-right: 200px;
+        margin-left: 100px !important;
+        padding-right: 49px !important;
+        padding-left: 50px !important;
+    }
+
+    /*Overskrift til resultat quizzen*/
+    .overskrift_resultat{
+        font-size: 22px;
+        color: white;
+    }
+
+    /*Tekst på resultat af quizzen*/
+    .tekst_resultat{
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    }
+
+    /*Tekst - oplevelser der passer til dig*/
+.tekst_resultat2{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 15px;
+    color: rgb(171, 24, 24) !important;
+    }
+
+    /*Billederne på resultat af quizzen*/
+    .billede_resultat{
+        width: 100%;
+    }
+    /*Grid resultat af quizzen*/
+    .grid-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /*Billede 1 på resultat af quizzen*/
+    .celle1 {
+        text-align: left;
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    /*Billede 2 på resultat af quizzen*/
+    .celle2 {
+        text-align: left;
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    /*Billede 3 på resultat af quizzen*/
+    .celle3 {
+        margin: 5px;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .del_tekst{
+        color: black;
+        font-size: 16px;
+        font-weight: bolder;
+        text-align: center;
+    }
+}
