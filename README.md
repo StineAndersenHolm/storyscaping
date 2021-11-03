@@ -3,3 +3,5 @@ For at henlede målgruppen til at huske at dele deres op- levelser, har vi yderm
 
 ## Vigtig info om pluginet
 * For at bruge pluginet, skal man indsætte shortcoden "show_rabat"
+
+!(image)
