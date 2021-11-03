@@ -250,6 +250,16 @@ span.mlw_qmn_new_question {
 }
 
 
+/*Styling af "del din historie her" knap*/
+a.elementor-button-link.elementor-button.elementor-size-sm {
+    background-color: #a594aa !important;
+    color: white !important;
+    background-color: #a594aa;
+    border-radius: inherit;
+    border-radius: 15px!important;
+}
+
+
 
 /*----- Ipad version ----*/
 @media only screen and (min-width:700px) {
