@@ -1,4 +1,4 @@
-#POP UP PLUGIN 
+# POP UP PLUGIN 
 
-##Shortcode
+## Shortcode
 * For at bruge pluginet, skal man indsætte shortcoden "show_rabat"
