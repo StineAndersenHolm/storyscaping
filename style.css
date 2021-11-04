@@ -253,6 +253,11 @@ img.attachment-large.size-large {
     margin-left: 30px;
 }
 
+/*Fjernet hvid baggrund*/
+section.elementor-section.elementor-top-section.elementor-element.elementor-element-2596dcf.elementor-section-content-middle.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default {
+    margin-bottom: -20px;
+}
+
 
 /*Styling af "del din historie her" knap*/
 a.elementor-button-link.elementor-button.elementor-size-sm {
