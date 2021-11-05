@@ -12,6 +12,13 @@
  Text Domain:  astrachildtheme
 */
 
+
+/* Fjern hvid område ved footer */
+.elementor-widget-wrap.elementor-element-populated {
+    margin-top: -22px;
+}
+
+
 /* Diven for hele quizzen */
 .qsm-quiz-container{
     text-align: center;
