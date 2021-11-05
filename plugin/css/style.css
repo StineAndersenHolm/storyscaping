@@ -56,8 +56,9 @@
 .sofakartoffel_tekst4 {
     text-align: center;
   	font-size: 12px;
- 	margin-bottom: -15px;
+ 	margin-bottom: -20px;
     color: gray;
+  margin-top: 20px;
 }
 
 #rabat {
@@ -94,6 +95,7 @@ input[type="email"] {
     font-family: 'Montserrat', sans-serif;
     text-align: center !important;
     margin-bottom: 2% !important;
+    margin-left: -1px !important;
 }
 
 input[type="text"] {
@@ -104,6 +106,7 @@ input[type="text"] {
     font-family: 'Montserrat', sans-serif;
     text-align: center !important;
     margin-bottom: 2% !important;
+  margin-left: -1px !important;
 }
 
 ::-webkit-input-placeholder {
@@ -132,6 +135,7 @@ input[type="submit"] {
     cursor: pointer !important;
     font-family: 'Montserrat', sans-serif;
   	border-radius: inherit;
+  margin-left: -1px !important;
 }
 
 
