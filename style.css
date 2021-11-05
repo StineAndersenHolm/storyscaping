@@ -1,478 +1,213 @@
-/*
- Theme Name:   Astra Child Theme
- Theme URI:    http://truestory.stineholm.dk
- Description:  Astra Child Theme
- Author:       Stine
- Author URI:   http://truestory.stineholm.dk
- Template:     astra
- Version:      3.1.7
- License:      GNU General Public License v2 or later
- License URI:  http://www.gnu.org/licenses/gpl-2.0.html
- Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
- Text Domain:  astrachildtheme
-*/
-
-
-/* Fjern hvid område ved footer */
-.elementor-widget-wrap.elementor-element-populated {
-    margin-top: -22px;
+.login-form {
+  	width: 400px !important;
+    height:  auto !important; 
+    padding: 30px 20px 10px 20px !important;
+  	background-image: url('../img/kartoffel_baggrund4.png');
+    background-color: #bfa4868e;
+ 	left:30%;
+  	object-fit: cover !important;
+  	position: absolute !important;
+  	bottom: 100px;
 }
 
-
-/* Diven for hele quizzen */
-.qsm-quiz-container{
+.logo_div {
+    padding: -10px !important;
     text-align: center;
-    margin-top: 100px !important;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding: 60px 30px 60px 30px;
+    margin-top: -20px;
 }
 
-/* Baggrundsfarven til quizzen */
-.qsm-quiz-container.qmn_quiz_container.mlw_qmn_quiz.quiz_theme_default {
-    background-color: #e8e5de !important;
+#logo {
+    width: 30% !important;
 }
 
-.qsm-quiz-form{
- text-align: center;
+#velkommen {
+    color: #a580c0;
+  	margin-top: 15px;
+  	margin-bottom: 0px !important;
+  	text-align: center;
+  font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-input{
-    margin-right: 7px !important;
-}
-
-.mlw_qmn_quiz{
- text-align: center;
-}
-
-.mlw_qmn_quiz_link{
-padding: 50px;
-}
-
-.mlw_qmn_question {
-text-align: center;
-}
-
-.mlw_qmn_timer {
-    background-color: #AA8DB0 !important;
-    display: none;
-    border-radius: 50% !important;
-}
-
-a.qsm-btn.qsm-previous.qmn_btn.mlw_qmn_quiz_link.mlw_previous {
-    display: none !important;
-}
-
-/* Felterne hvor man skal indtaste navne og mail */
-input.mlwRequiredText.qsm_required_text {
-    background-color: #716453 !important;
-    border: none !important;
-    border-radius: 80px !important;
-    color: white !important;
-    text-align: center !important;
-}
-
-/* Godkend div */
-.qsm-pagination.qmn_pagination.border.margin-bottom{
-    margin-bottom: 10px;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 25px !important;
-  
-}
-
-.qmn_quiz_container .qmn_btn, .qmn_quiz_container .btn {
-    color: #fff !important;
-    background-color: #AA8DB0 !important;
-    padding: 15px !important;
-}
-
-/* Godkend knap */
-.qmn_quiz_container .qmn_btn, .qmn_quiz_container .btn {
-    color: #fff !important;
-    background-color: #AA8DB0 !important;
-    padding: 15px !important;
-}
-
-/*Fjernet border*/
-.qsm-pagination.qmn_pagination.border.margin-bottom {
-    border: none;
-}
-
-.qsm-before-message.mlw_qmn_message_before {
-    border: none;
-    margin: 0px !important; 
-    padding: 0px !important;
-}
-
-/*Tekst på resultat af quizzen*/
-.tekst_resultat{
-text-align: center;
-font-size: 13px;
-}
-
-/*Tekst - oplevelser der passer til dig*/
-.tekst_resultat2{
+.sofakartoffel_tekst {
     text-align: center;
-    font-weight: 700px;
+    color: #a580c0;
+ 	padding-left: 50px!important;
+   	padding-right: 50px;
+    line-height: 1.2;
+  	font-size: 15px;
+}
+
+.sofakartoffel_tekst2 {
     font-size: 15px;
-    color: black;
     margin-top: -30px;
-    }
-
-/*Billederne på resultat af quizzen*/
-.billede_resultat{
-    width: 50%;
-}
-
-.link {
-    text-decoration: none;
-    color: white;
-}
-/*Grid af kartoffel_billede og tekst*/
-.container {
-  display: flex;
- flex-direction: column;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "kolonne1 kolonne2"
-    ". ."
-    ". .";
-}
-
-.kolonne1 { grid-area: kolonne1; 
-text-align: center;
-width: 100%;
-}
-
-.kolonne2 { grid-area: kolonne2;
-text-align: center;
-width: 100%;
-}
-
-/*Grid af quizzen*/
-.grid-container {
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 1px 1px;
-    font-family: 'Rajdhani', sans-serif;
-    grid-template-areas:
-        "celle1 celle2 celle3"
-        ". . ."
-        ". . .";
-}
-
-/*Billede 1 på resultat af quizzen*/
-.celle1 {
-    grid-area: celle1;
-    text-align: center;
-    font-size: 10px;
-}
-
-
-/*Billede 2 på resultat af quizzen*/
-.celle2 {
-    grid-area: celle2;
-    text-align: center;
-    margin-top: 15px;
-    font-size: 10px;
-}
-
-/*Billede 3 på resultat af quizzen*/
-.celle3 {
-    margin-top: 20px;
-    text-align: center;
-    grid-area: celle3;
-    font-size: 10px;
-}
-
-/*Billederne på resultat-siden*/
-.billede_resultat{
-    width: 300px; 
-    filter: opacity(60%)drop-shadow(0 0 0 black);
-    background-color: black;
-}
-
-/*Billederne på resultat-siden*/
-.billede_tekst {
-    font-size: 16px;
-    font-weight: 500;
-    font-weight: 800;
-    margin-top: -140px;
-    margin-bottom: 110px !important;
-    color: white;
-    position: relative;
-    font-size: 20px;
-}
-
-.billede_kartoffel {
-    width: 30% !important;
-    margin-bottom: 20px!important;
-}
-
-.billede_kartoffel_pomfrit {
-    width: 20% !important;
-    margin-bottom: 20px!important;
-}
-.quiz-overskrift{
-    color: #716453 !important;
-    font-size: 21px !important;
-}
-
-.tekst_resultat2 {
-    font-size: 17px;
-    font-weight: 600;
-    color: #716453;
-}
-
-.overskrift_resultat{
-    color: #716453 !important;
-}
-
-/*Skriftstørrelse til svarmulighederne*/
-label {
-    font-size: 18px !important;
-    color: black !important;
-}
-
-/*Skriftstørrelse til spørgsmålene*/
-span.mlw_qmn_new_question {
-    font-size: 23px;
-    color: #716453 !important;
-}
-
- /*Næste Knap*/
- a.qsm-btn.qsm-next.qmn_btn.mlw_qmn_quiz_link.mlw_next {
-    margin-right:  20px !important;
-    margin-left: 20px !important;
-    padding: 10px !important;
-    border-radius: 50px !important;
-    background-color: #AA8DB0 !important;
-    font-size: 16px !important;
-    font-weight: bold;
-}
-
-img.attachment-large.size-large {
-    margin-left: 30px;
-}
-
-/*Fjernet hvid baggrund*/
-section.elementor-section.elementor-top-section.elementor-element.elementor-element-2596dcf.elementor-section-content-middle.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default {
-    margin-bottom: -20px;
-}
-
-
-/*Styling af "del din historie her" knap*/
-a.elementor-button-link.elementor-button.elementor-size-sm {
-    background-color: #a594aa !important;
-    color: white !important;
-    background-color: #a594aa;
-    border-radius: inherit;
-    border-radius: 15px!important;
-}
-
-
-
-/*----- Ipad version ----*/
-@media only screen and (min-width:700px) {
-  
- /*----- tekst og kartoffelbillede ----*/
-  .container {
-  display: flex;
-  flex-direction: row;
-}
-
-.kolonne1 { grid-area: kolonne1; 
-width: 50%;
-}
-
-.kolonne2 { grid-area: kolonne2;
-width: 50%;
-}
-  
-  /* resultat tekst til sødkartoffel */
-  .tekst_resultat {
-    margin-left: -20px;
-    margin-right: -30px;
-    font-size: 13px;
+    color: #a58191;
     text-align: center;
 }
 
-    /* Diven for hele quizen */
-.qsm-quiz-container{
-    text-align: center;
-    margin: 100px;
-    background-color: #BEB296 !important;
-    padding: 80px 50px 80px 50px;
-}
-
-    /*Næste Knap*/
-    a.qsm-btn.qsm-next.qmn_btn.mlw_qmn_quiz_link.mlw_next {
-        margin: 0px;
-        padding-right: 49px !important;
-        padding-left: 50px !important;
-    }
-
-    /* Godkend Knap */
-    .qsm-pagination.qmn_pagination.border.margin-bottom{
-        justify-content: center;
-    }
-
-    /*Overskrift til resultat quizzen*/
-    .overskrift_resultat{
-        font-size: 22px !important;
-        color: #716453 !important;
-    }
-
-
-    /*Tekst - oplevelser der passer til dig*/
-.tekst_resultat2{
-    text-align: center;
-    font-weight: bolder;
-    font-size: 15px;
-    }
-
-    /*Billederne på resultat af quizzen*/
-    .billede_resultat{
-        width: 100% !important;
-    }
-    /*Grid resultat af quizzen*/
-    .grid-container {
-        display: flex;
-        flex-direction: row;
-    }
-
-    /*Billede 1 på resultat af quizzen*/
-    .celle1 {
-        text-align: left;
-        margin: 5px;
-        font-size: 14px;
-    }
-
-    /*Billede 2 på resultat af quizzen*/
-    .celle2 {
-        text-align: left;
-        margin: 5px;
-        font-size: 14px;
-    }
-
-    /*Billede 3 på resultat af quizzen*/
-    .celle3 {
-        margin: 5px;
-        text-align: left;
-        font-size: 14px;
-    }
-
-    .del_tekst{
-        color: black;
-        font-size: 16px;
-        font-weight: bolder;
-        text-align: center;
-    }
-
-    .billede_tekst{
-        margin: 0px;
-        margin-top: -65px;
-        margin-bottom: 0px !important;
-        font-size: 11px;
-        text-align: center;
-    }
-  
-  .billede_kartoffel{
-    width: 70% !important;
-    margin-left: 50px;
-  }
-  
-  .billede_kartoffel_pomfrit {
-    width: 50% !important;
-    margin-bottom: 20px!important;
-}
-}
-
-/*----- Computer version ----*/
-@media only screen and (min-width:900px) {
-  
-  .tekst_resultat1 {
-    margin-top: -170px;
-    margin-right: -10px;
-    margin-left: 70px;
-}
-
-/*----- Overskrift til quizzen ----*/
-.quiz-overskrift{
-    font-weight: 900 !important;
-    font-size: 40px !important;
-}
-
-/*----- div quiz ----*/
-.qsm-quiz-container.qmn_quiz_container.mlw_qmn_quiz.quiz_theme_default {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    margin-left: 200px !important;
-    margin-right: 200px!important;
-}
-
-/*----- billede_tekst til resultaterne ----*/
-.billede_tekst{
-margin-top: -85px;
-margin-bottom: 50px !important;
-}
-
-input{
-    margin:10px !important;
-    border: none !important;
-}
-
-input.mlwRequiredText.qsm_required_text{
-    padding: 10px 40px 10px 40px;
-}
-  
-  /*----- tekst til resultatet ----*/
-.tekst_resultat {
-    margin-left: -20px!important;
-    margin-right: -30px!important;
-    font-size: 13px!important;
-    margin-bottom: 20px!important;
-  }
-  
-  /*----- kartoffelbillede ----*/
-  .billede_kartoffel {
-    width: 70% !important;
-}
-}
-
-/*----- Stor computer version ----*/
-@media only screen and (min-width:1100px) {
-.tekst_resultat {
-  width: 400px;
+.sofakartoffel_tekst3 {
+    color: #a58191 !important;
+  	text-align: center !important;
     font-size: 15px !important;
-  margin-left: 20px !important;
-  }
+    margin-bottom: 0px !important;
+    font-weight: 100 !important;
+}
 
-  
-.billede_kartoffel {
-    width: 42% !important;
-   margin-right: -30px;
+.sofakartoffel_tekst4 {
+    text-align: center;
+  	font-size: 12px;
+ 	margin-bottom: -15px;
+    color: gray;
 }
-  
-  .billede_kartoffel_pomfrit {
-    width: 30% !important;
-    margin-right: -30px;
+
+#rabat {
+    font-family: avenir next;
+    font-weight: 400;
+  	font-size: 65px;
+    color: #a58191;
+  	text-align: center;
 }
-  
-.overskrift_resultat {
-  margin-left: 20px;
-    font-size: 25px !important;
-  width: 400px;
-  margin-top: 10px;
-}
-  
-  .billede_tekst {
+
+#tilmeld {
+    color: #1f1f1f;
+    margin-left: 3% !important;
     font-size: 14px;
-    margin-top: -100px;
+    margin-top: 5% !important;
+    font-family: 'Montserrat', sans-serif;
 }
+
+.form {
+    width: 100% !important;
+    position: relative;
+    margin: 25px auto !important;
+}
+
+#min{
+    margin-left: 25% !important;
+}
+
+input[type="email"] {
+    width: 100% !important;
+    height: 30px !important;
+    position: relative !important;
+    font-size: 12px !important;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center !important;
+    margin-bottom: 2% !important;
+}
+
+input[type="text"] {
+    width: 100% !important;
+    height: 30px !important;
+    position: relative !important;
+    font-size: 12px !important;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center !important;
+    margin-bottom: 2% !important;
+}
+
+::-webkit-input-placeholder {
+  color: lightgrey;
+}
+
+:-ms-input-placeholder {
+  color: lightgrey;
+}
+
+::placeholder {
+  color: lightgrey;
+}
+
+
+
+input[type="submit"] {
+  	width: 100%;
+    background: #a580c0; !important;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+    border: none;
+    margin-bottom: 5% !important;
+    cursor: pointer !important;
+    font-family: 'Montserrat', sans-serif;
+  	border-radius: inherit;
+}
+
+
+input[type="submit"]:hover {
+  	background-color: #a58191; !important;
+    opacity: 0.9;
+}
+
+
+.popupCloseButton {
+    background-color: #fff;
+ 	color: #a580c0;
+    font-weight: 100;
+    border: 1px solid #a580c0 !important;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "arial";
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+
+
+.login-form {
+    -webkit-animation: slide-in-blurred-top 0.8s cubic-bezier(0.230, 1.000, 0.320, 1.000) 2s both;
+    animation: slide-in-blurred-top 0.8s cubic-bezier(0.230, 1.000, 0.320, 1.000) 2s both;
+  z-index: 1;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-10-29 10:25:23
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-blurred-top
+ * ----------------------------------------
+ */
+
+@-webkit-keyframes slide-in-blurred-top {
+    0% {
+        -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+        transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+        -webkit-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        -webkit-filter: blur(40px);
+        filter: blur(40px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+        transform: translateY(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .login-form{
+    display: none !important;
+  }
 }
